@@ -58,7 +58,9 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('images/lough_key.jpg') no-repeat center ;
+  background: /*linear-gradient(#849B04, transparent 90%),*/
+              linear-gradient(0deg, #222233, transparent),
+              url('images/lough_key.jpg') no-repeat center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -68,7 +70,9 @@ header {
 }
 /*Experience Header Page*/
 .work_experience {
-  background: url('images/Edmonton_Skyline_grey.jpg') no-repeat top ;
+  background:  linear-gradient(#14003c, transparent 90%),
+               linear-gradient(0deg, #222233, transparent),
+               url('images/Edmonton_Skyline_grey.jpg') no-repeat top ;
   background-size: cover;
   overflow:hidden;
   padding-top: 60px;
@@ -96,6 +100,7 @@ header .profile-image:hover {
   margin: 10px auto;
   border-radius: 75px;
   text-transform: uppercase;
+  text-shadow: 0 1px 1px #222;;
 
 }
 .location {
@@ -109,6 +114,9 @@ header .profile-image:hover {
 
 }
 
+
+
+
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
@@ -116,8 +124,9 @@ header .profile-image:hover {
   text-align: left;
   background: #fff;
   border-bottom: 4px solid #ccc;
-  border-radius: 6px;
+  border-radius: 20px 0 20px 0;
   transition: all .5s;
+  box-shadow: inset 0 0 35px -10px #04389B;
 }
 .card:hover {
   border-color: #5B54AB;
